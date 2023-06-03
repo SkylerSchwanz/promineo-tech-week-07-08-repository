@@ -1,7 +1,139 @@
-.topDiv {
+:root {
+    --app-topBar-width: 45%;
+    --app-topBar-height: 5%;
+    --app-text-highlight-color: dimgray;
+    --app-background-border-radius: 1vh;
+    --app-background-width: 75%;
+    --app-background-padding: 1% 2%;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body * {
+    display: flexbox;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 75%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+p {
+    font: icon;
+    color:rgb(135, 135, 135);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h6, a {
+    color:rgb(135, 135, 135);
+    text-decoration: none;
+    width: fit-content;
+}
+
+.formBackground {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+
+    justify-self: center;
+    align-self: center;
+
+    align-content: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    width: 50vh;
+    height: fit-content;
+
     background-color: rgb(210, 210, 210);
-    border-radius: 5px;
-    height: 50px;
+    border-radius: 1em;
+}
+
+.formBackground h1 {
+    justify-self: center;
+    align-self: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: var(--app-topBar-width);
+    height: var(--app-topBar-height);
+
+    background-color: rgb(210, 210, 210);
+    border-radius: 1em;
+}
+
+.mainBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(225, 225, 225);
+    border-radius: var(--app-background-border-radius);
+    width: var(--app-background-width);
+    height: var(--app-background-height);
+    padding: var(--app-background-padding);
+    margin: 0;
+}
+
+.mainBackground * {
+    display: flexbox;
+}
+
+#main-image {
+    align-self: center;
+    border-radius: 45%; 
+    width: 35%; 
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.links * {
+    display: flexbox;
+    text-decoration: none;
+
+    height: min-content;
+
+    background-color: whitesmoke;
+    border-radius: 1em;
+}
+
+.links a:hover {
+    color:var(--app-text-highlight-color);
 }
 
 .boldText {
@@ -14,42 +146,9 @@
     padding-right: 12px;
 }
 
-.mainBackground {
-    background-color: rgb(225, 225, 225);
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 100px;
-}
-
 .formInputs {
     border-radius: 10px;
     outline: none;
     border-color:snow; 
     background-color: whitesmoke;
-}
-
-p {
-    font: icon;
-    color:rgb(135, 135, 135);
-    text-decoration: none;
-    display: inline-block;
-}
-
-H2 {
-    color:rgb(135, 135, 135);
-    text-decoration: none;
-}
-
-H6 {
-    color:rgb(135, 135, 135);
-    text-decoration: none;
-}
-
-a {
-    color:rgb(135, 135, 135);
-}
-
-body {
-    background-color:whitesmoke;
 }
